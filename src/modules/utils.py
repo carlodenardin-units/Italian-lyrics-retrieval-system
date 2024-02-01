@@ -14,7 +14,7 @@ def save_compressed_index(compressed_dictionary, compressed_pointers, compressed
 
 def save_dataset_info(document_info, average_length):
 	with open('index/documents_info.txt', 'w') as file:
-			file.write(documents_info)
+			file.write(document_info)
 
 	with open('index/avglen.txt', 'w') as file:
 		file.write(average_length)
