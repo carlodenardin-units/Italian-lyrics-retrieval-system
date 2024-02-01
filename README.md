@@ -14,12 +14,14 @@ In this repository different concepts of the information retrieval can be retrie
 - queries retrieval (boolean, tf-idf, okapi-bm25, phrase queries)
 
 ## Environment
-`git clone` <br>
+`git clone https://github.com/carlodenardin-units/italian-lyrics-retrieval-system.git` <br>
 `conda create -n <env_name> python=3.9` <br>
 `conda activate <env_name>` <br>
 `pip install -r requirements.txt` <br>
 `pip install lingua==4.15.0` <br>
 `pip install lingua-language-detector==2.0.2`
+
+The packages `lingua` and `lingua-language-detector`, for some problems, on my OSX system must be installed separately with respect to the requirements.txt file.
 
 ## Examples
 
