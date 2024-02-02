@@ -1,6 +1,6 @@
 # Italian lyrics retrieval system
 
-In the following repository, various aspects contributing to the development of the ["Italian Lyrics Retrieval System"](https://nlp.stanford.edu/IR-book/information-retrieval-book.html) are examined and explored. Among the implemented concepts, methods for document preprocessing, duplicate removal, compression, result classification, handling of phrase queries, and a brief analysis of the phonetic algorithms used are highlighted.
+In the following repository, various aspects contributing to the development of the ["Italian Lyrics Retrieval System"](Italian%20Lyrics%20Retrieval%20System.pdf) are examined and explored. Among the implemented concepts, methods for document preprocessing, duplicate removal, compression, result classification, handling of phrase queries, and a brief analysis of the phonetic algorithms used are highlighted.
 
 Disclaimer: The following repository is not intended as a detailed guide on algorithm implementations; for these details, please refer to the book [”Introduction to Information Retrieval"](https://nlp.stanford.edu/IR-book/information-retrieval-book.html). Alongside the text, a possible and simple implementation of the system in Python is provided.
 
