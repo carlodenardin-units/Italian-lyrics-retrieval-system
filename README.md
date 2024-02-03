@@ -14,6 +14,9 @@ In this repository different concepts of the information retrieval can be retrie
 - queries retrieval (boolean, tf-idf, okapi-bm25, phrase queries)
 
 ## Environment
+Dev on `python 3.9`
+
+How to run (conda env) <br>
 `git clone https://github.com/carlodenardin-units/italian-lyrics-retrieval-system.git` <br>
 `conda create -n <env_name> python=3.9` <br>
 `conda activate <env_name>` <br>

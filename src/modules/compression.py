@@ -2,7 +2,7 @@ from bitarray import bitarray
 from itertools import islice
 from modules.utils import save_compressed_index
 
-class Compress():
+class Compress:
 
 	def __init__(self, block_size: int = 4):
 		self.block_size = block_size
@@ -125,7 +125,7 @@ class Compress():
 This is the decompression algorithm, it is not used in the project but it is
 implemented for completeness.
 
-class Decompress():
+class Decompress:
 
 	def __init__(self, block_size: int = 4):
 		self.block_size = block_size
