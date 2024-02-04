@@ -123,8 +123,10 @@ class Query:
 	def perform_phrase_query(self, query):
 		"""
 			This function performs a phrase query on the positional index.
-			More specifically given a query of more than one token it finds
-			the documents that contains the tokens with a distance of k.
+			The query is handled has a biword index (can generate false positive).
+                        More specifically given a query of more than one token it finds
+			the documents that contains the tokens with a distance of k. The rank
+                        is based on the number of occurences.
 
 			- query: The query to perform
 			- return: The list of documents that contain or partialy contain the prase query
