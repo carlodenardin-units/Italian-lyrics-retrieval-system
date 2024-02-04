@@ -4,6 +4,7 @@ from nltk.corpus import stopwords
 from unidecode import unidecode
 from typing import List
 
+# snowball stemmer https://snowballstem.org/algorithms/italian/stemmer.html
 import Stemmer
 
 TOKENIZER = RegexpTokenizer(r'\w+')
