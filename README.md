@@ -28,7 +28,7 @@ The packages `lingua` and `lingua-language-detector`, for some problems, on my O
 
 ## Examples
 
-The indexes for the examples are provided within this repository. If you want the entire colletion is available [here](https://drive.google.com/file/d/1xqAqqUhJ9juD3uGtEVdxZi2gp-JWgjuZ/view?usp=share_link).
+The indexes for the examples are provided within this repository. The entire collection of documents is provided in the data folder in the zip format. To create the indexes with this collection unpack it before the use. The collection is also available [here](https://drive.google.com/file/d/1xqAqqUhJ9juD3uGtEVdxZi2gp-JWgjuZ/view?usp=share_link).
 
 To test the system just run the main file:
 
