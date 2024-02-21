@@ -90,12 +90,12 @@ class Query:
 			idf = self.compute_idf(N, len(posting_lists))
 
 			for doc in posting_lists:
-				if doc not in dict:
-					dict[doc] = idf * ((len(posting_lists[doc]) * (self.k1 + 1)) / (len(posting_lists[doc]) + self.k1 * ((1 - self.b) + self.b * (document_info[doc] / avglen))))
+				if doc not in answers:
+					answers[doc] = idf * ((len(posting_lists[doc]) * (self.k1 + 1)) / (len(posting_lists[doc]) + self.k1 * ((1 - self.b) + self.b * (document_info[doc] / avglen))))
 				else:
-					dict[doc] += idf * ((len(posting_lists[doc]) * (self.k1 + 1)) / (len(posting_lists[doc]) + self.k1 * ((1 - self.b) + self.b * (document_info[doc] / avglen))))
+					answers[doc] += idf * ((len(posting_lists[doc]) * (self.k1 + 1)) / (len(posting_lists[doc]) + self.k1 * ((1 - self.b) + self.b * (document_info[doc] / avglen))))
 
-		answers = {k: v for k, v in sorted(dict.items(), key = lambda item: item[1], reverse = True)}
+		answers = {k: v for k, v in sorted(answers.items(), key = lambda item: item[1], reverse = True)}
 
 		return answers
 

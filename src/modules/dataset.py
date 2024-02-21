@@ -38,15 +38,20 @@ class Dataset:
 		self.N = len(self.documents)
 
 	def remove_duplicates(self):
+		"""
+			Remove duplicate documents from the dataset of same author.
+		"""
 		simhash = Simhash()
-		dict = {}
+		authors_documents = {}
 		for document in self.documents:
-			if document.author not in dict:
-				dict[document.author] = []
-			dict[document.author].append(document)
+			if document.author not in authors_documents:
+				authors_documents[document.author] = []
+			authors_documents[document.author].append(document)
+		
+		print("Documents before removing duplicates: ", len(self.documents))
 
-		for author in tqdm(dict, desc = "Removing duplicates"):
-			documents = dict[author]
+		for author in tqdm(authors_documents, desc = "Removing duplicates"):
+			documents = authors_documents[author]
 			unique_songs = {}
 			for document in documents:
 				tokens = Preprocessor.perform_preprocess(document.lyrics)
@@ -55,3 +60,5 @@ class Dataset:
 					unique_songs[hash] = document.id
 				else:
 					self.documents.remove(document)
+				
+		print("Documents after removing duplicates: ", len(self.documents))
