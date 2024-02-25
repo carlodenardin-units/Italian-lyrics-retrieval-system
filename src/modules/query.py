@@ -126,7 +126,7 @@ class Query:
 			The query is handled has a biword index (can generate false positive).
                         More specifically given a query of more than one token it finds
 			the documents that contains the tokens with a distance of k. The rank
-                        is based on the number of occurences.
+                        is based on the number of occurences. Term proximity (https://nlp.stanford.edu/IR-book/html/htmledition/positional-indexes-1.html)
 
 			- query: The query to perform
 			- return: The list of documents that contain or partialy contain the prase query
