@@ -16,6 +16,8 @@ In this repository different concepts of the information retrieval can be retrie
 ## Environment
 Dev on `python 3.9`
 
+Run the `bash run.sh` and activate the environment `italian-lyrics-retrieval-system` file otherwise look to the next steps.
+
 How to run (conda env) <br>
 `git clone https://github.com/carlodenardin-units/italian-lyrics-retrieval-system.git` <br>
 `conda create -n <env_name> python=3.9` <br>
